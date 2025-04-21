@@ -12,22 +12,21 @@ class CategoryWidget extends StatelessWidget {
       height: 100,
       decoration: BoxDecoration(
         color: AppColors.lightBackgroundColor,
-        borderRadius: BorderRadius.circular(12.8),
+        borderRadius: BorderRadius.circular(12.0),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
-        spacing: 8,
+        spacing: 8.0,
         children: [
           Image.asset(
-            'assets/categories/${category.toLowerCase()}.png',
+            "assets/categories/${category.toLowerCase()}.png",
             height: 48,
           ),
-          const SizedBox(height: 8),
           Text(
             category,
-            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
           ),
         ],
       ),
